@@ -1,5 +1,7 @@
 # Basic information
 
+* The *tracking.log* file is located in the *\System Volume Information* directory.
+* This file contains a *MoveTable*. According to Microsoft, *the MoveTable has an entry for each file that has been moved off the volume, where the file had an ObjectID.*
 * The first sector is used by a header. All subsequent sectors are called "log sectors".
 * A log sector contains multiple log entries stored without gaps between them (each log entry must end within the same sector).
 * Every log sector ends with a sector footer.
