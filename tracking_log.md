@@ -20,6 +20,27 @@ Offset (bytes)|Length (bytes)|Meaning
 36|4|Expansion data: file size before log expansion
 40|92|Extended header
 
+## Extended header
+
+The first 64 bytes are called volume information.
+
+Offset (bytes)|Length (bytes)|Meaning
+---|---|---
+0|16|Machine ID
+16|16|Volume object ID
+32|8|Unknown (0)
+40|8|Unknown timestamp (FILETIME)
+48|8|Unknown timestamp (FILETIME)
+56|4|Flag (if non-zero, make object IDs reborn)
+60|4|Unknown state
+64|4|Unknown log entry index
+68|4|Unknown log entry index
+72|4|Unknown log entry index
+76|4|Unknown log entry index
+80|4|Unknown log entry index
+84|4|Unknown log entry index
+88|4|Unknown log entry index
+
 # Log entry
 
 Offset (bytes)|Length (bytes)|Meaning
